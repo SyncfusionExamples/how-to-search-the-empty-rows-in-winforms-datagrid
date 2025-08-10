@@ -1,8 +1,8 @@
-# How to search the empty rows in WinForms DataGrid (SfDataGrid)?
+# How to search the empty rows in WinForms DataGrid?
 
 ## About the sample
 
-This example illustrates how to search and filter the empty rows in WinForms DataGrid (SfDataGrid).
+This example illustrates how to search and filter the empty rows in WinForms DataGrid?
 
 [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) allows you to search and filter empty rows by customizing the [SearchController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SearchController.html).
 
@@ -11,7 +11,6 @@ This example illustrates how to search and filter the empty rows in WinForms Dat
 public Form1()
 {
     InitializeComponent();
-
     sfDataGrid1.SearchController = new SearchControllerExt(sfDataGrid1, panel);
 }
 
@@ -57,7 +56,6 @@ public class SearchControllerExt : SearchController
         }
         else if(searchPanel.chkEmptyCell.Checked)
         {
-
             for (int i = 0; i < this.DataGrid.Columns.Count; i++)
             {
                 var col = this.DataGrid.Columns[i];
@@ -71,10 +69,10 @@ public class SearchControllerExt : SearchController
         }
         else
             return base.FilterRecords(dataRow);
-    }
-   
+    }   
 }
 ```
+Take a moment to peruse the [WinForms DataGrid - Search](https://help.syncfusion.com/windowsforms/datagrid/search) documentation, where you can find about Search in DataGrid, with code examples.
 
 ## Requirements to run the demo 
 
